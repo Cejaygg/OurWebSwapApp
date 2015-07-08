@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F82A1E46-3D68-4F98-8A86-A625CA5FEAD7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FinalDraft</RootNamespace>
+    <AssemblyName>FinalDraft</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <NuGetPackageImportStamp>d322aa27</NuGetPackageImportStamp>
+    <ApplicationInsightsResourceId>/subscriptions/77f15a74-8a71-4e79-9a3b-f27cd976110c/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/FinalDraft</ApplicationInsightsResourceId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Extensibility.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.0.0\lib\net45\Microsoft.ApplicationInsights.Extensibility.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.0.0\lib\net45\Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Extensibility.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.0.0\lib\net45\Microsoft.ApplicationInsights.Extensibility.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Web.TelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.TelemetryChannel.1.0.0\lib\net45\Microsoft.ApplicationInsights.Web.TelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Diagnostics.Instrumentation.Extensions.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.0.17.0\lib\net45\Microsoft.Diagnostics.Instrumentation.Extensions.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="homescreenuser3.html" />
+    <Content Include="homescreenuser3ws.aspx" />
+    <Content Include="homescreenuser4.html" />
+    <Content Include="homescreenuser4ws.aspx" />
+    <Content Include="homescreenuser5.html" />
+    <Content Include="homescreenuser5ws.aspx" />
+    <Content Include="homescreenuser6.html" />
+    <Content Include="homescreenuser6ws.aspx" />
+    <Content Include="loginpage.css" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config" />
+    <None Include="Properties\PublishProfiles\FinalDraft.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fullcalendar.css" />
+    <Content Include="fullcalendar.js" />
+    <Content Include="fullcalendar.min.css" />
+    <Content Include="fullcalendar.print.css" />
+    <Content Include="GiveShiftIsAvailablews.aspx" />
+    <Content Include="homescreen.css" />
+    <Content Include="homescreen.html" />
+    <Content Include="homescreenws.aspx" />
+    <Content Include="jquery.min.js" />
+    <Content Include="moment.min.js" />
+    <Content Include="PickupShiftpage.html" />
+    <Content Include="PickupShiftpageuser3.html" />
+    <Content Include="PickupShiftpageuser4.html" />
+    <Content Include="PickupShiftpageuser5.html" />
+    <Content Include="PickupShiftpageuser6.html" />
+    <Content Include="pickupshiftws.aspx" />
+    <Content Include="realloginpage.html" />
+    <Content Include="scripts\ai.0.15.0-build30412.js" />
+    <Content Include="scripts\ai.0.15.0-build30412.min.js" />
+    <Content Include="ShowAvailableShiftsuser3ws.aspx" />
+    <Content Include="ShowAvailableShiftsuser4ws.aspx" />
+    <Content Include="ShowAvailableShiftsuser5ws.aspx" />
+    <Content Include="ShowAvailableShiftsuser6ws.aspx" />
+    <Content Include="ShowAvailableShiftsws.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GiveShiftIsAvailablews.aspx.cs">
+      <DependentUpon>GiveShiftIsAvailablews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiveShiftIsAvailablews.aspx.designer.cs">
+      <DependentUpon>GiveShiftIsAvailablews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homescreenuser3ws.aspx.cs">
+      <DependentUpon>homescreenuser3ws.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homescreenuser3ws.aspx.designer.cs">
+      <DependentUpon>homescreenuser3ws.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homescreenuser4ws.aspx.cs">
+      <DependentUpon>homescreenuser4ws.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homescreenuser4ws.aspx.designer.cs">
+      <DependentUpon>homescreenuser4ws.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homescreenuser5ws.aspx.cs">
+      <DependentUpon>homescreenuser5ws.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homescreenuser5ws.aspx.designer.cs">
+      <DependentUpon>homescreenuser5ws.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homescreenuser6ws.aspx.cs">
+      <DependentUpon>homescreenuser6ws.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homescreenuser6ws.aspx.designer.cs">
+      <DependentUpon>homescreenuser6ws.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homescreenws.aspx.cs">
+      <DependentUpon>homescreenws.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homescreenws.aspx.designer.cs">
+      <DependentUpon>homescreenws.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pickupshiftws.aspx.cs">
+      <DependentUpon>pickupshiftws.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pickupshiftws.aspx.designer.cs">
+      <DependentUpon>pickupshiftws.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowAvailableShiftsuser3ws.aspx.cs">
+      <DependentUpon>ShowAvailableShiftsuser3ws.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowAvailableShiftsuser3ws.aspx.designer.cs">
+      <DependentUpon>ShowAvailableShiftsuser3ws.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAvailableShiftsuser4ws.aspx.cs">
+      <DependentUpon>ShowAvailableShiftsuser4ws.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowAvailableShiftsuser4ws.aspx.designer.cs">
+      <DependentUpon>ShowAvailableShiftsuser4ws.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAvailableShiftsuser5ws.aspx.cs">
+      <DependentUpon>ShowAvailableShiftsuser5ws.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowAvailableShiftsuser5ws.aspx.designer.cs">
+      <DependentUpon>ShowAvailableShiftsuser5ws.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAvailableShiftsuser6ws.aspx.cs">
+      <DependentUpon>ShowAvailableShiftsuser6ws.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowAvailableShiftsuser6ws.aspx.designer.cs">
+      <DependentUpon>ShowAvailableShiftsuser6ws.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAvailableShiftsws.aspx.cs">
+      <DependentUpon>ShowAvailableShiftsws.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowAvailableShiftsws.aspx.designer.cs">
+      <DependentUpon>ShowAvailableShiftsws.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55764</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55764/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.ApplicationInsights.Agent.Intercept.0.17.0\build\Microsoft.ApplicationInsights.Agent.Intercept.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.Agent.Intercept.0.17.0\build\Microsoft.ApplicationInsights.Agent.Intercept.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.Agent.Intercept.0.17.0\build\Microsoft.ApplicationInsights.Agent.Intercept.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.Agent.Intercept.0.17.0\build\Microsoft.ApplicationInsights.Agent.Intercept.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
