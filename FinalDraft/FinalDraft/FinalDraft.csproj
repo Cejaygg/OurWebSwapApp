@@ -113,7 +113,7 @@
     <Content Include="PickupShiftpageuser5.html" />
     <Content Include="PickupShiftpageuser6.html" />
     <Content Include="pickupshiftws.aspx" />
-    <Content Include="realloginpage.html" />
+    <Content Include="index.html" />
     <Content Include="scripts\ai.0.15.0-build30412.js" />
     <Content Include="scripts\ai.0.15.0-build30412.min.js" />
     <Content Include="ShowAvailableShiftsuser3ws.aspx" />
